@@ -267,6 +267,10 @@
         color: red;
     }
     
+    input[type="password"].error {
+        border: red;
+    }
+    
     button {
         background-color: var(--buttonBg);
         border: 0;

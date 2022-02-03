@@ -13,6 +13,8 @@ function checkPWV() {
 submitButton.addEventListener("click", (e) => {
     if (!checkPWV()) {
         e.preventDefault();
+        pwf.classList.add("error");
+        pwvf.classList.add("error");
         pwdiv.appendChild(err);
     }
 });
