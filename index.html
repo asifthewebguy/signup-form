@@ -12,48 +12,64 @@
 <body>
     <div class="container">
         <header>
-            <h1>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up now to get started. You know you want to.</h1>
+            <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up now to get started.</p>
+            <p>You know you want to.</p>
         </header>
         <aside>
-            <div class="logo">ODIN</div>
-            <img src="./assets/images/halie-west-25xggax4bSA-unsplash.jpg" alt="" srcset="">
+            <div class="logo">
+                <img src="./assets/images/odin-lined.png" alt="Odin Logo"> ODIN
+            </div>
+            <img src="./assets/images/halie-west-25xggax4bSA-unsplash.jpg" alt="">
         </aside>
         <section id="signupForm">
 
             <form action="#" method="post">
                 <div class="form">
-                    <h2>Let's do this!</h2>
+                    <p>Let's do this!</p>
                     <div class="name">
-                        <label for="fName">
-                            First Name
-                        </label><br>
-                        <input id="fName" name="fName" placeholder="First Name" type="text" required>
-                        <label for="lName">
-                            Last Name
-                        </label><br>
-                        <input id="lName" name="lName" placeholder="Last Name" type="text" required>
+                        <div class="firstname">
+                            <label for="fName">
+                                First Name
+                            </label><br>
+                            <input id="fName" name="fName" placeholder="First Name" type="text" required>
+                        </div>
+                        <div class="lastname">
+                            <label for="lName">
+                                Last Name
+                            </label><br>
+                            <input id="lName" name="lName" placeholder="Last Name" type="text" required>
+                        </div>
                     </div>
-                    <div class="email">
-                        <label for="email">
-                            Email
-                        </label><br>
-                        <input id="email" name="email" placeholder="your email address" type="email" required>
+                    <div class="email-phone">
+                        <div class="email">
+                            <label for="email">
+                                Email
+                            </label><br>
+                            <input id="email" name="email" placeholder="your email address" type="email" required>
+                        </div>
+                        <div class="phone">
+                            <label for="phone">
+                                Phone Number
+                            </label><br>
+                            <input id="phone" name="phone" placeholder="your phone number" type="tel" required>
+                        </div>
                     </div>
-                    <div class="phone">
-                        <label for="phone">
-                            Phone Number
-                        </label><br>
-                        <input id="phone" name="phone" placeholder="your phone number" type="tel" required>
-                    </div>
+
                     <div class="password">
-                        <label for="password">Password</label>
-                        <input type="password" name="password" id="password">
-                        <label for="password-verify">Verify Password</label>
-                        <input type="password" name="password-verify" id="password-verify">
+                        <div class="password-f">
+                            <label for="password">Password</label> <br>
+                            <input type="password" name="password" id="password">
+                        </div>
+                        <div class="password-v">
+                            <label for="password-verify">Verify Password</label> <br>
+                            <input type="password" name="password-verify" id="password-verify">
+                        </div>
                     </div>
                 </div>
-                <button type="submit">Create Account</button>
-                <p>Already have an account? <a href="#" class="login">Log in</a></p>
+                <div class="form-footer">
+                    <button type="submit">Create Account</button>
+                    <p>Already have an account? <a href="#" class="login">Log in</a></p>
+                </div>
             </form>
         </section>
     </div>
