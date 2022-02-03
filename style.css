@@ -1,286 +1,313 @@
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
-}
-
-
-/* HTML5 display-role reset for older browsers */
-
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-    display: block;
-}
-
-body {
-    line-height: 1;
-}
-
-ol,
-ul {
-    list-style: none;
-}
-
-blockquote,
-q {
-    quotes: none;
-}
-
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-    content: '';
-    content: none;
-}
-
-table {
-    border-collapse: collapse;
-    border-spacing: 0;
-}
-
-
-/* main css */
-
-@font-face {
-    font-family: 'Norse-Bold';
-    src: url(./assets/fonts/Norsebold.otf);
-}
-
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
-:root {
-    --sb: 25vw;
-    --width: 75vw;
-    --gap: 0;
-    --buttonBg: #596D48;
-    font-size: 10px;
-}
-
-.container {
-    display: grid;
-    grid-template: 'aside . header  header' 'aside . form  form';
-    gap: 0;
-    background-color: #f8f9fa;
-    max-width: 1440px;
-    margin: 0 auto;
-    overflow: hidden;
-    font-family: 'Roboto', sans-serif;
-}
-
-header {
-    grid-area: header;
-    height: auto;
-    width: 100%;
-    /* background-color: black; */
-    font-size: 3rem;
-    display: grid;
-    align-items: center;
-}
-
-header p {
-    padding: 3rem;
-    /* max-width: 67.7rem; */
-}
-
-aside {
-    grid-area: aside;
-    height: 100vh;
-    width: calc(25vw - 20px);
-    overflow: hidden;
-    /* background-color: blue; */
-    position: relative;
-}
-
-aside .logo {
-    z-index: 10;
-    position: relative;
-    color: #fff;
-    width: 100%;
-    text-align: center;
-    font-family: 'Norse-Bold';
-    font-size: 7.1rem;
-    top: 300px;
-    background-color: hsla(0, 0%, 0%, 0.562);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.logo img {
-    position: relative;
-    width: auto;
-    height: 7.1rem;
-}
-
-aside img {
-    height: 100vh;
-    width: auto;
-    position: absolute;
-    top: 0;
-    right: 0;
-}
-
-section#signupForm {
-    grid-area: form;
-    width: calc(var(--width) - var(--gap));
-    height: calc(75vh - 20px);
-    /* background-color: rebeccapurple; */
-}
-
-p {
-    font-size: 2.4rem;
-}
-
-label {
-    line-height: 3rem;
-    text-transform: uppercase;
-    font-weight: bold;
-}
-
-label,
-input {
-    font-size: 1.5rem;
-}
-
-.error {
-    font-size: 1.2rem;
-}
-
-.form {
-    padding: 30px;
-    box-shadow: #ccc 10px 10px 10px 10px;
-}
-
-.form-footer {
-    padding: 30px;
-}
-
-.name,
-.email-phone,
-.password {
-    display: flex;
-    gap: 72px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-
-input {
-    border: #E5E7EB .005px solid;
-    border-radius: .5rem;
-}
-
-input:focus {
-    border: blue .0005px solid;
-    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.377);
-}
-
-.form-footer p {
-    font-size: 1.5rem;
-    padding-top: 2rem;
-}
-
-.error {
-    color: red;
-}
-
-button {
-    background-color: var(--buttonBg);
-    border: 0;
-    border-radius: 8px;
-    color: #fff;
-    font-size: 1.8rem;
-    font-weight: bold;
-    padding: 1rem 3rem;
-}
+    html,
+    body,
+    div,
+    span,
+    applet,
+    object,
+    iframe,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    blockquote,
+    pre,
+    a,
+    abbr,
+    acronym,
+    address,
+    big,
+    cite,
+    code,
+    del,
+    dfn,
+    em,
+    img,
+    ins,
+    kbd,
+    q,
+    s,
+    samp,
+    small,
+    strike,
+    strong,
+    sub,
+    sup,
+    tt,
+    var,
+    b,
+    u,
+    i,
+    center,
+    dl,
+    dt,
+    dd,
+    ol,
+    ul,
+    li,
+    fieldset,
+    form,
+    label,
+    legend,
+    table,
+    caption,
+    tbody,
+    tfoot,
+    thead,
+    tr,
+    th,
+    td,
+    article,
+    aside,
+    canvas,
+    details,
+    embed,
+    figure,
+    figcaption,
+    footer,
+    header,
+    hgroup,
+    menu,
+    nav,
+    output,
+    ruby,
+    section,
+    summary,
+    time,
+    mark,
+    audio,
+    video {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font-size: 100%;
+        font: inherit;
+        vertical-align: baseline;
+    }
+    /* HTML5 display-role reset for older browsers */
+    
+    article,
+    aside,
+    details,
+    figcaption,
+    figure,
+    footer,
+    header,
+    hgroup,
+    menu,
+    nav,
+    section {
+        display: block;
+    }
+    
+    body {
+        line-height: 1;
+    }
+    
+    ol,
+    ul {
+        list-style: none;
+    }
+    
+    blockquote,
+    q {
+        quotes: none;
+    }
+    
+    blockquote:before,
+    blockquote:after,
+    q:before,
+    q:after {
+        content: '';
+        content: none;
+    }
+    
+    table {
+        border-collapse: collapse;
+        border-spacing: 0;
+    }
+    /* main css */
+    
+    @font-face {
+        font-family: 'Norse-Bold';
+        src: url(./assets/fonts/Norsebold.otf);
+    }
+    
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+     :root {
+        --sb: 25vw;
+        --width: 75vw;
+        --gap: 0;
+        --buttonBg: #596D48;
+        font-size: 10px;
+    }
+    
+    .container {
+        display: grid;
+        grid-template: 'aside . header  header' 'aside . form  form';
+        gap: 0;
+        background-color: #f8f9fa;
+        max-width: 1440px;
+        margin: 0 auto;
+        overflow: hidden;
+        font-family: 'Roboto', sans-serif;
+    }
+    
+    header {
+        grid-area: header;
+        height: auto;
+        width: 100%;
+        font-size: 3rem;
+        display: grid;
+        align-items: center;
+    }
+    
+    header p {
+        padding: 3rem;
+    }
+    
+    aside {
+        grid-area: aside;
+        height: 100vh;
+        width: calc(25vw - 20px);
+        overflow: hidden;
+        position: relative;
+    }
+    
+    aside .logo {
+        z-index: 10;
+        position: relative;
+        color: #fff;
+        width: 100%;
+        text-align: center;
+        font-family: 'Norse-Bold';
+        font-size: 7.1rem;
+        top: 300px;
+        background-color: hsla(0, 0%, 0%, 0.562);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .logo img {
+        position: relative;
+        width: auto;
+        height: 7.1rem;
+    }
+    
+    aside img {
+        height: 100vh;
+        width: auto;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    
+    section#signupForm {
+        grid-area: form;
+        width: calc(var(--width));
+        height: auto;
+    }
+    
+    p {
+        font-size: 2.4rem;
+    }
+    
+    label {
+        line-height: 3rem;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+    
+    label,
+    input {
+        font-size: 1.5rem;
+    }
+    
+    .error {
+        font-size: 1.2rem;
+    }
+    
+    .form {
+        padding: 30px;
+        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.377);
+    }
+    
+    .form-footer {
+        padding: 30px;
+    }
+    
+    .name,
+    .email-phone,
+    .password {
+        display: flex;
+        gap: 72px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    
+    input {
+        border: #E5E7EB .005px solid;
+        border-radius: .5rem;
+    }
+    
+    input:focus {
+        border: blue .0005px solid;
+        box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.377);
+    }
+    
+    .form-footer p {
+        font-size: 1.5rem;
+        padding-top: 2rem;
+    }
+    
+    .error {
+        color: red;
+    }
+    
+    button {
+        background-color: var(--buttonBg);
+        border: 0;
+        border-radius: 8px;
+        color: #fff;
+        font-size: 1.8rem;
+        font-weight: bold;
+        padding: 1rem 3rem;
+    }
+    
+    @media screen and (max-width: 700px) {
+        .container {
+            grid-auto-flow: column;
+            grid-template: "aside" "header" "form";
+        }
+        aside {
+            width: 100vw;
+            height: auto;
+        }
+        aside .logo {
+            top: 0;
+        }
+        aside img {
+            width: 100vw;
+            height: auto;
+        }
+        section#signupForm,
+        header {
+            width: 100vw;
+        }
+        .name,
+        .email-phone,
+        .password {
+            flex-direction: column;
+            justify-content: stretch;
+            justify-items: stretch;
+            padding-top: 0;
+            padding-bottom: 0;
+            gap: 10px;
+        }
+        input {
+            width: 100%;
+        }
+    }
